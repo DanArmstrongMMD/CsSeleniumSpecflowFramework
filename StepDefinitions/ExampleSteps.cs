@@ -1,20 +1,22 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using SpecflowTraining.Drivers;
-using SpecflowTraining.Pages;
+using CsSeleniumSpecflowFramework.Drivers;
+using CsSeleniumSpecflowFramework.Pages;
 
 [assembly: Parallelizable(ParallelScope.Fixtures)]
-namespace SpecflowTraining.StepDefinitions
+namespace CsSeleniumSpecflowFramework.StepDefinitions
 {
     [Binding]
     public sealed class BrowserStepDef
     {
         private IWebDriver driver;
-
         private readonly ScenarioContext _scenarioContext;
-
         private ExamplePage examplePage;
-        public BrowserStepDef(ScenarioContext scenarioContext) => _scenarioContext = scenarioContext;
+
+        public BrowserStepDef(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
 
         [Given(@"the user has navigated to the example page")]
         public void GivenTheUserHasNavigatedToTheExamplePage()
@@ -36,7 +38,6 @@ namespace SpecflowTraining.StepDefinitions
             examplePage
                 .ConfirmExampleActionComplete();
         }
-    }
 
-    
+    }
 }

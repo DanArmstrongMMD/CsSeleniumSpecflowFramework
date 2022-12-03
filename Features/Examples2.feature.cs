@@ -103,7 +103,7 @@ namespace CsSeleniumSpecflowFramework.Features
   this.FeatureBackground();
 #line hidden
 #line 7
-    testRunner.When("the user does an action", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("the user does no action", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
     testRunner.Then("the user should see the result", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 
 
-namespace SpecflowTraining.Pages
+namespace CsSeleniumSpecflowFramework.Pages
 {
     internal class BasePage
     {

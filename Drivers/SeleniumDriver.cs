@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace SpecflowTraining.Drivers
+namespace CsSeleniumSpecflowFramework.Drivers
 {
-    internal class SeleniumDriver
+    internal class SeleniumDriver 
     {
         private IWebDriver driver;
 

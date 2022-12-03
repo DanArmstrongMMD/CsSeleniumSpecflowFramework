@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace SpecflowTraining.Pages
+namespace CsSeleniumSpecflowFramework.Pages
 {
     internal class ExamplePage : BasePage
     {
