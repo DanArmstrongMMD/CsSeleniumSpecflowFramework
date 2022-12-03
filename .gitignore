@@ -1,0 +1,13 @@
+*.user
+
+# Build folders
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+# Specflow Specific
+*.feature.cs
+*.feature.xlsx.*
+*.Specs_*.html
