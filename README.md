@@ -8,7 +8,7 @@ Basic C# Selenium Framework using Specflow, for developing automated end to end 
 - Page Object Model structure, with a Base Page containing wrappers for some common Selenium functionality
 - Parallel execution of Specflow Feature files
 - Screenshot on failure
-- Driver Factory Class for generating the driver and browser based on command line arguments
+- Driver Factory Class for generating the driver based on variables in the ```Drivers/DriverBuilder.cs``` file
 
 # Usage
 
