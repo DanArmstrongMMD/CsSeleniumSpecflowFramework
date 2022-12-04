@@ -14,8 +14,8 @@ namespace CsSeleniumSpecflowFramework.Features.Hooks
         [BeforeScenario]
         public void BeforeScenario()
         {
-            SeleniumDriver seleniumDriver = new SeleniumDriver(_scenarioContext);
-            _scenarioContext.Set(seleniumDriver, "SeleniumDriver");
+            IWebDriver driver = DriverBuilder.BuildDriver();
+            _scenarioContext.Set(driver, "WebDriver");
         }
 
         [AfterScenario]

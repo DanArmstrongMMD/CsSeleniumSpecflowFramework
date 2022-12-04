@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using CsSeleniumSpecflowFramework.Drivers;
 using CsSeleniumSpecflowFramework.Pages;
 
 [assembly: Parallelizable(ParallelScope.Fixtures)]
@@ -21,7 +20,7 @@ namespace CsSeleniumSpecflowFramework.StepDefinitions
         [Given(@"the user has navigated to the example page")]
         public void GivenTheUserHasNavigatedToTheExamplePage()
         {
-            driver = _scenarioContext.Get<SeleniumDriver>("SeleniumDriver").Setup();
+            driver = _scenarioContext.Get<IWebDriver>("WebDriver");
             examplePage = new ExamplePage(driver).GoToPage();
         }
 
